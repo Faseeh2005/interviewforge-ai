@@ -1,0 +1,28 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+
+# Databases
+*.db
+*.sqlite3
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

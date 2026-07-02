@@ -7,5 +7,6 @@ class Resume(Base):
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String)
     content = Column(Text)
+    extracted_text = Column(Text, nullable=True)
 
     user_id = Column(Integer, ForeignKey("users.id"))

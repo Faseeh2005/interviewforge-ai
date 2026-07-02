@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, ForeignKey, Text
+from sqlalchemy import Column, Integer, ForeignKey, JSON
 
 from app.database.base import Base
 
@@ -8,7 +8,7 @@ class Interview(Base):
 
     id = Column(Integer, primary_key=True, index=True)
 
-    questions = Column(Text)
+    questions = Column(JSON)
 
     user_id = Column(
         Integer,
