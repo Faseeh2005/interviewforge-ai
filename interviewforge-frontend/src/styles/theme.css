@@ -1,0 +1,121 @@
+/* ---------- THEME ---------- */
+
+body{
+    margin:0;
+    font-family:Inter,Segoe UI,Arial,sans-serif;
+    background:#0f172a;
+    color:#ffffff;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/* ---------- PAGE ---------- */
+
+.page{
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ---------- TITLES ---------- */
+
+.page-title{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.page-subtitle{
+    color:#94a3b8;
+    margin-bottom:40px;
+}
+
+/* ---------- CARDS ---------- */
+
+.card{
+    background:#1e293b;
+    border:1px solid #334155;
+    border-radius:16px;
+    padding:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card-title{
+    color:#94a3b8;
+    margin-bottom:12px;
+}
+
+.card-value{
+    font-size:40px;
+    font-weight:bold;
+    color:#3b82f6;
+}
+
+/* ---------- GRID ---------- */
+
+.grid{
+    display:grid;
+    gap:24px;
+}
+
+.grid-2{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+}
+
+.grid-3{
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+}
+
+.grid-4{
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+}
+
+/* ---------- BUTTON ---------- */
+
+.btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:14px 24px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+
+/* ---------- INPUT ---------- */
+
+.input{
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #334155;
+    background:#0f172a;
+    color:white;
+    outline:none;
+}
+
+.input:focus{
+    border-color:#3b82f6;
+}

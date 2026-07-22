@@ -1,0 +1,60 @@
+.btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    font-weight:600;
+}
+
+.btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+.input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+    background:white;
+}
+
+.input:focus{
+
+    border-color:var(--primary);
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+    padding:30px;
+}

@@ -5,6 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.database.database import engine
 from app.database.base import Base
 from app.models import user
@@ -18,6 +19,16 @@ from app.api.history.routes import router as history_router
 from app.api.dashboard.routes import router as dashboard_router
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 init_db()
 

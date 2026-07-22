@@ -1,0 +1,50 @@
+:root{
+    --primary:#2563eb;
+    --primary-hover:#1d4ed8;
+
+    --background:#f5f7fb;
+    --surface:#ffffff;
+
+    --text:#111827;
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --success:#10b981;
+    --danger:#ef4444;
+
+    --radius:16px;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    --transition:.25s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+    Inter,
+    Segoe UI,
+    sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+}
+
+button,
+input{
+    font:inherit;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}

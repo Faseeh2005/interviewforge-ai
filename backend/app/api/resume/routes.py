@@ -25,10 +25,10 @@ def upload_resume(
     text = extract_text_from_pdf(file_path)
 
     resume = Resume(
-        filename=file.filename,
-        content=text,
-        user_id=user.id
-    )
+    user_id=user.id,
+    filename=file.filename,
+    extracted_text=text
+)
 
     db.add(resume)
     db.commit()
